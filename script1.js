@@ -5,7 +5,7 @@ function getRan(min, max) {
 }
 
 async function checkSignal() {
-    let randomNumber1 = getRan(1.2, 2.7).toFixed(2);
+    let randomNumber1 = getRan(1.2, 2.5).toFixed(2);
     const url = 'https://lucky-jet-history.gamedev-atech.cc/public/history/api/history/replay';
     const response = await fetch(url);
     const data = await response.json();
